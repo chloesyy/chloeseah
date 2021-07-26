@@ -1,0 +1,50 @@
+:root {
+    --primary: #EEDDD3;
+    --secondary: #CBD7E1;
+}
+
+.card {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 660px;
+    padding: 5em 10em;
+    border: 2px solid var(--secondary);
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.05);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.social-icon-link {
+    color: #3f3f3f;
+    font-size: 36pt;
+}
+
+@media only screen and (min-width: 1200px) {
+    .card {
+        width: 84%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .card {
+        width: 50%;
+    }
+    .content {
+        font-size: 12pt;
+        width: 100px;
+        text-align: center;
+    }
+    .social-icons {
+        flex-direction: column;
+    }
+}
