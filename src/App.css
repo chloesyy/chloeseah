@@ -15,7 +15,12 @@ h1 {
     font-size: 18pt;
 }
 
-.home-card {
+.small-text {
+    font-size: 12pt;
+}
+
+.card-container {
+    background: linear-gradient(135deg, #ffe0e3 30%, #a7e0e5 70%);
     display: flex;
     height: 100vh;
     justify-content: center;
