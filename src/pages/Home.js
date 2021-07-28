@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../App.css';
 import Card from '../components/Card';
 import ButterflySvg from '../components/ButterflySvg.js';
 
 
 function Home() {
-    const [start, setStart] = useState(true);
     return (
         <>
             <div className='card-container'>
             <ButterflySvg />
-            <Card start={start}/>    
+            <Card />    
             </div>
         </>
     )

@@ -9,12 +9,9 @@ function ButterflySvg(props) {
 
     const butterflyAnimation = useSpring({
         from: {
-            // opacity: 0,
-            // strokeDasharray: 2000,
             pathLength: offset
         },
         to: {
-            // opacity: 1,
             pathLength: 0
         },
         config: {
