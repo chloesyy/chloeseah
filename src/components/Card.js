@@ -4,6 +4,7 @@ import { useSpring, animated, useChain, useSpringRef } from 'react-spring';
 import './Card.css';
 
 function Card({ start }) {
+    const delay = 4000;
     const cardRef = useSpringRef();
     const cardAnimation = useSpring({
         from: {
@@ -15,6 +16,7 @@ function Card({ start }) {
         config: {
             friction: 100
         },
+        delay: delay,
         ref: cardRef
     })
 
@@ -31,6 +33,7 @@ function Card({ start }) {
         config: {
             duration: 500
         },
+        delay: delay,
         ref: contentRef
     })
 
@@ -47,6 +50,7 @@ function Card({ start }) {
         config: {
             duration: 500
         },
+        delay: delay,
         ref: headingRef
     })
 
@@ -63,6 +67,7 @@ function Card({ start }) {
         config: {
             duration: 500
         },
+        delay: delay,
         ref: smallTextRef
     })
 
@@ -80,6 +85,7 @@ function Card({ start }) {
         config: {
             duration: 250
         },
+        delay: delay,
         ref: linkedinRef
     })
 
@@ -96,6 +102,7 @@ function Card({ start }) {
         config: {
             duration: 250
         },
+        delay: delay,
         ref: instagramRef
     })
 
@@ -112,6 +119,7 @@ function Card({ start }) {
         config: {
             duration: 250
         },
+        delay: delay,
         ref: githubRef
     })
 

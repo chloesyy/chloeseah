@@ -4,5 +4,7 @@ svg {
     width: 100%;
     left: 0;
     top: 0;
-    fill: white;
+    fill: none;
+    stroke: white;
+    stroke-width: 19
 }
