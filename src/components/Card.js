@@ -123,7 +123,7 @@ function Card({ start }) {
         ref: githubRef
     })
 
-    useChain(start ? [cardRef, contentRef, headingRef, smallTextRef, linkedinRef, instagramRef, githubRef] : [], [0, 0.1, 0.2, 0.3, 0.6, 0.7, 0.8], 4000);
+    useChain([cardRef, contentRef, headingRef, smallTextRef, linkedinRef, instagramRef, githubRef], [0, 0.1, 0.2, 0.3, 0.6, 0.7, 0.8], 4000);
 
     return (
         <>
