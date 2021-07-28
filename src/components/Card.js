@@ -135,15 +135,15 @@ function Card({ start }) {
                 </div>
                 <div className='social-icons-container'>
                     <div className='social-icons'>
-                        <AnimatedLink style={linkedinAnimation} className='social-icon-link linkedin' to={{ pathname: 'https://www.linkedin.com/in/chloe-seah-1456901b0/' }} target='_blank' aria-label='LinkedIn'>
+                        <animated.a style={linkedinAnimation} className='social-icon-link linkedin' href='https://www.linkedin.com/in/chloe-seah-1456901b0/' target='_blank' aria-label='LinkedIn'>
                             <i className='fab fa-linkedin'></i>
-                        </AnimatedLink>
-                        <AnimatedLink style={instagramAnimation} className='social-icon-link instagram' to={{ pathname: 'https://www.instagram.com/chloe_syy_/' }} target='_blank' aria-label='Instagram'>
+                        </animated.a>
+                        <animated.a style={instagramAnimation} className='social-icon-link instagram' href='https://www.instagram.com/chloe_syy_/' target='_blank' aria-label='Instagram'>
                             <i className='fab fa-instagram'></i>
-                        </AnimatedLink>
-                        <AnimatedLink style={githubAnimation} className='social-icon-link github' to={{ pathname: 'https://github.com/chloesyy' }} target='_blank' aria-label='Github'>
+                        </animated.a>
+                        <animated.a style={githubAnimation} className='social-icon-link github' href='https://github.com/chloesyy' target='_blank' aria-label='Github'>
                             <i className='fab fa-github'></i>
-                        </AnimatedLink>
+                        </animated.a>
                     </div>
                 </div>
             </animated.div>
