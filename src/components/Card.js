@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSpring, animated, useChain, useSpringRef } from 'react-spring';
 import './Card.css';
 
-function Card() {
+function Card({ start }) {
     const cardRef = useSpringRef();
     const cardAnimation = useSpring({
         from: {
@@ -115,7 +115,7 @@ function Card() {
         ref: githubRef
     })
 
-    useChain([cardRef, contentRef, headingRef, smallTextRef, linkedinRef, instagramRef, githubRef], [0, 0.1, 0.2, 0.3, 0.6, 0.7, 0.8], 4000);
+    useChain(start ? [cardRef, contentRef, headingRef, smallTextRef, linkedinRef, instagramRef, githubRef] : [], [0, 0.1, 0.2, 0.3, 0.6, 0.7, 0.8], 4000);
 
     return (
         <>
